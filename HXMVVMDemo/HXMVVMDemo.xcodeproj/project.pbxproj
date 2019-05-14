@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		488F138522898A61007E942C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 488F138422898A61007E942C /* AppDelegate.m */; };
-		488F138822898A61007E942C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488F138722898A61007E942C /* ViewController.m */; };
-		488F138B22898A61007E942C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488F138922898A61007E942C /* Main.storyboard */; };
 		488F138D22898A64007E942C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 488F138C22898A64007E942C /* Assets.xcassets */; };
 		488F139022898A64007E942C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488F138E22898A64007E942C /* LaunchScreen.storyboard */; };
 		488F139322898A64007E942C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 488F139222898A64007E942C /* main.m */; };
 		488F139D22898A64007E942C /* HXMVVMDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 488F139C22898A64007E942C /* HXMVVMDemoTests.m */; };
 		488F13A822898A64007E942C /* HXMVVMDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 488F13A722898A64007E942C /* HXMVVMDemoUITests.m */; };
+		488F13BA228A6B27007E942C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488F13B9228A6B27007E942C /* HomeViewController.m */; };
+		488F13D0228A8EFC007E942C /* MarshalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 488F13CF228A8EFC007E942C /* MarshalModel.m */; };
+		488F13D3228A8F0A007E942C /* MarshalViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 488F13D2228A8F0A007E942C /* MarshalViewModel.m */; };
+		488F13D6228A8F53007E942C /* MarshalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 488F13D5228A8F53007E942C /* MarshalCell.m */; };
+		488F13D9228AA646007E942C /* MarshalService.m in Sources */ = {isa = PBXBuildFile; fileRef = 488F13D8228AA646007E942C /* MarshalService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +41,6 @@
 		488F138022898A61007E942C /* HXMVVMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HXMVVMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		488F138322898A61007E942C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		488F138422898A61007E942C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		488F138622898A61007E942C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		488F138722898A61007E942C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		488F138A22898A61007E942C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		488F138C22898A64007E942C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		488F138F22898A64007E942C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		488F139122898A64007E942C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +51,16 @@
 		488F13A322898A64007E942C /* HXMVVMDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HXMVVMDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		488F13A722898A64007E942C /* HXMVVMDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXMVVMDemoUITests.m; sourceTree = "<group>"; };
 		488F13A922898A64007E942C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		488F13B8228A6B27007E942C /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		488F13B9228A6B27007E942C /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		488F13CE228A8EFC007E942C /* MarshalModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarshalModel.h; sourceTree = "<group>"; };
+		488F13CF228A8EFC007E942C /* MarshalModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarshalModel.m; sourceTree = "<group>"; };
+		488F13D1228A8F0A007E942C /* MarshalViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarshalViewModel.h; sourceTree = "<group>"; };
+		488F13D2228A8F0A007E942C /* MarshalViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarshalViewModel.m; sourceTree = "<group>"; };
+		488F13D4228A8F53007E942C /* MarshalCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarshalCell.h; sourceTree = "<group>"; };
+		488F13D5228A8F53007E942C /* MarshalCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarshalCell.m; sourceTree = "<group>"; };
+		488F13D7228AA646007E942C /* MarshalService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarshalService.h; sourceTree = "<group>"; };
+		488F13D8228AA646007E942C /* MarshalService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarshalService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +111,13 @@
 		488F138222898A61007E942C /* HXMVVMDemo */ = {
 			isa = PBXGroup;
 			children = (
+				488F13DA228AA64C007E942C /* Service */,
+				488F13BE228A702C007E942C /* ViewModel */,
+				488F13BD228A7018007E942C /* Model */,
+				488F13BC228A700F007E942C /* View */,
+				488F13BB228A6FFE007E942C /* Controller */,
 				488F138322898A61007E942C /* AppDelegate.h */,
 				488F138422898A61007E942C /* AppDelegate.m */,
-				488F138622898A61007E942C /* ViewController.h */,
-				488F138722898A61007E942C /* ViewController.m */,
-				488F138922898A61007E942C /* Main.storyboard */,
 				488F138C22898A64007E942C /* Assets.xcassets */,
 				488F138E22898A64007E942C /* LaunchScreen.storyboard */,
 				488F139122898A64007E942C /* Info.plist */,
@@ -130,6 +142,51 @@
 				488F13A922898A64007E942C /* Info.plist */,
 			);
 			path = HXMVVMDemoUITests;
+			sourceTree = "<group>";
+		};
+		488F13BB228A6FFE007E942C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				488F13B8228A6B27007E942C /* HomeViewController.h */,
+				488F13B9228A6B27007E942C /* HomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		488F13BC228A700F007E942C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				488F13D4228A8F53007E942C /* MarshalCell.h */,
+				488F13D5228A8F53007E942C /* MarshalCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		488F13BD228A7018007E942C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				488F13CE228A8EFC007E942C /* MarshalModel.h */,
+				488F13CF228A8EFC007E942C /* MarshalModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		488F13BE228A702C007E942C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				488F13D1228A8F0A007E942C /* MarshalViewModel.h */,
+				488F13D2228A8F0A007E942C /* MarshalViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		488F13DA228AA64C007E942C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				488F13D7228AA646007E942C /* MarshalService.h */,
+				488F13D8228AA646007E942C /* MarshalService.m */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +293,6 @@
 			files = (
 				488F139022898A64007E942C /* LaunchScreen.storyboard in Resources */,
 				488F138D22898A64007E942C /* Assets.xcassets in Resources */,
-				488F138B22898A61007E942C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +317,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				488F138822898A61007E942C /* ViewController.m in Sources */,
+				488F13D6228A8F53007E942C /* MarshalCell.m in Sources */,
 				488F139322898A64007E942C /* main.m in Sources */,
+				488F13D9228AA646007E942C /* MarshalService.m in Sources */,
+				488F13D0228A8EFC007E942C /* MarshalModel.m in Sources */,
+				488F13D3228A8F0A007E942C /* MarshalViewModel.m in Sources */,
 				488F138522898A61007E942C /* AppDelegate.m in Sources */,
+				488F13BA228A6B27007E942C /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +359,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		488F138922898A61007E942C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				488F138A22898A61007E942C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		488F138E22898A64007E942C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

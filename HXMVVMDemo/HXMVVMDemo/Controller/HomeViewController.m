@@ -9,10 +9,10 @@
 #import "MarshalCell.h"
 #import "MarshalViewModel.h"
 #import "MarshalService.h"
+
 static NSString * const kMarshalCellIdentifier = @"MarshalCell";
 
-
-@interface HomeViewController ()<
+@interface HomeViewController () <
 UITableViewDelegate,
 UITableViewDataSource
 >
@@ -45,10 +45,6 @@ UITableViewDataSource
 	return self.viewModels.count;
 }
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//	return 50.f
-//}
-
 #pragma mark - Pravite Tools
 
 - (void)setNavbar{
@@ -75,18 +71,21 @@ UITableViewDataSource
 	}];
 }
 
-- (UIColor *)mainTextBlue {
-	return [self rgbWithR:7 G:71 B:89];
-}
-
-- (UIColor *)highlightColor {
-	return [self rgbWithR:50 G:199 B:242];
-}
-
 - (UIColor *)rgbWithR:(CGFloat)r G:(CGFloat)g B:(CGFloat)b {
 	return [UIColor colorWithRed:r/250 green:g/250 blue:b/250 alpha:1];
 }
 
+- (NSMutableArray *)viewModelsWithDatas:(NSArray *)datas {
+	if (!_viewModels) {
+		_viewModels = [NSMutableArray array];
+		for (int i = 0; i < datas.count; i++) {
+			MarshalModel *model = datas[i];
+			MarshalViewModel *viewModel = [[MarshalViewModel alloc]initWithModel:model];
+			[_viewModels addObject:viewModel];
+		}
+	}
+	return _viewModels;
+}
 
 #pragma mark - Lazy Loading
 
@@ -101,18 +100,6 @@ UITableViewDataSource
 		[_tableView registerClass:[MarshalCell class] forCellReuseIdentifier:kMarshalCellIdentifier];
 	}
 	return _tableView;
-}
-
-- (NSMutableArray *)viewModelsWithDatas:(NSArray *)datas {
-	if (!_viewModels) {
-		_viewModels = [NSMutableArray array];
-		for (int i = 0; i < datas.count; i++) {
-			MarshalModel *model = datas[i];
-			MarshalViewModel *viewModel = [[MarshalViewModel alloc]initWithModel:model];
-			[_viewModels addObject:viewModel];
-		}
-	}
-	return _viewModels;
 }
 
 @end

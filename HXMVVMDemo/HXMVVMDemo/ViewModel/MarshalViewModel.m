@@ -20,7 +20,7 @@
 - (instancetype)initWithModel:(MarshalModel *)model ; {
 	if (self = [super init]) {
 		self.name = model.name;
-		if (model.lessonCount > 30) {
+		if (model.lessonCount > 35) {
 			self.detailTextString = @"多于30门课程";
 			self.cellType = UITableViewCellAccessoryDetailDisclosureButton;
 		} else {

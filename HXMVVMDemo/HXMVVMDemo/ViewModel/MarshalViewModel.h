@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, readonly) NSString *detailTextString;
 @property (nonatomic, assign, readonly) UITableViewCellAccessoryType cellType;
 
-- (instancetype)initWithModel:(MarshalModel *)model ;
+- (instancetype)initWithModel:(MarshalModel *)model;
 
 @end
 
